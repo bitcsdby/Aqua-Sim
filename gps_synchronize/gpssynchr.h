@@ -19,15 +19,19 @@ private:
 
 	void localization();
 
+	float matrixdeterm(float *p,int n);
+	float make3adjmatrix(float *p, int m, int n);
+
 	//tu µÄ¹À¼ÆÖµ
 	double tu;
 
-	void* nodepointer;
+	underwaternode* nodepointer;
 
 public:
 	// add a new pair of coordinate and localreceivetime;
 	void addnewpair(CoordinatePair n);
-	gpssynchr(void* underwaternodepointer,double z);
+	gpssynchr(underwaternode* underwaternodepointer, double z);
 	~gpssynchr(void);
+	void print();
 };
 

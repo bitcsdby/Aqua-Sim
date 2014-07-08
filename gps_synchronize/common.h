@@ -30,3 +30,16 @@ struct CoordinatePair
 	CoordinatePair(Coordinate S,float time): s(S),localreceivetime(time){}
 };
 
+/*
+*简易的模拟underwaternode类
+*/
+struct underwaternode
+{
+	double x;
+	double y;
+	double z;
+
+	double timenow;
+
+	underwaternode(double x = 0.0, double y = 0.0, double z = 0.0, double t = 0.0) : x(x), y(y), z(z), timenow(t){};
+}; 
